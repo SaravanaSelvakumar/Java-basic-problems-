@@ -21,17 +21,16 @@ public class User {
             } else {
                 zero++;
             }
-            if (userNumbers[i] % 2 == 0) {
+            if (userNumbers[i] != 0 && userNumbers[i] % 2 == 0) {
                 even++;
-            } else {
+            } else if (userNumbers[i] != 0 && userNumbers[i] % 2 != 0) {
                 odd++;
             }
         }
-        System.out.println("postive: " + pos);
+        System.out.println("positive: " + pos);
         System.out.println("negative: " + neg);
         System.out.println("zeros: " + zero);
         System.out.println("odd: " + odd);
-        System.out.println("even:" + even);
+        System.out.println("even: " + even);
     }
 }
-
