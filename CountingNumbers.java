@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class User {
+public class CountingNumbers {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter 20 numbers");
