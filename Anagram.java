@@ -24,8 +24,8 @@ public class Anagram {
                 tempb[i] = b.toLowerCase().charAt(i);
             }
 
-            java.util.Arrays.sort(tempa);
-            java.util.Arrays.sort(tempb);
+            Arrays.sort(tempa);
+            Arrays.sort(tempb);
 
             for (int i = 0; i < tempb.length; i++) {
                 if (tempa[i] != tempb[i])
