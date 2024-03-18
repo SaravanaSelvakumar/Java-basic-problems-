@@ -1,0 +1,45 @@
+
+public class Bank {
+    public static void main(String[] args) {
+        User one = new User();
+        User two = new User("peter", 123);
+        one.setUsername("parker");
+        one.setPassword(123);
+        System.out.println(one.getUsername());
+        System.out.println(one.getPassword());
+        System.out.println(two.getUsername());
+        System.out.println(two.getPassword());
+
+    }
+}
+
+class User {
+
+    private String username;
+    private int password;
+
+    public User() {  //default constructor
+
+    }
+
+    public User(String username, int password) { //two parameterized constructor that gets a name and password
+        this.username = username;
+        this.password = password;
+    }
+
+    public String getUsername() {  //returns
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public int getPassword() {
+        return password;
+    }
+
+    public void setPassword(int password) {
+        this.password = password;
+    }
+}
