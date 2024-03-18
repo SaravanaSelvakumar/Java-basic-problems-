@@ -34,4 +34,23 @@ public class Anagram {
             return true;
         }
     }
+
+    //another method to check if it anagram
+    public static boolean check(String a, String b) {
+        if (a.length() != b.length()) {
+            return false;
+        }
+        char[] tempA = a.toLowerCase().toCharArray();
+        char[] tempB = b.toLowerCase().toCharArray();
+
+        Arrays.sort(tempA);
+        Arrays.sort(tempB);
+
+        for (int i = 0; i < tempA.length; i++) {
+            if (tempA[i] != tempB[i])
+                return false;
+        }
+        return true;
+    }
+    
 }
