@@ -5,20 +5,20 @@ class Fact {
         int[] user = new int[10];
         int[] duplicate = new int[10];
         Scanner scan = new Scanner(System.in);
-        System.out.println("enter 10 numbers");
 
+        System.out.println("enter 10 numbers");
         for (int i = 0; i < user.length; i++) {
-            user[i] = scan.nextInt();
+            user[i] = scan.nextInt(); //to print 10 values 
         }
 
         System.out.println("enter 10 numbers");
         for (int i = 0; i < duplicate.length; i++) {
-            duplicate[i] = scan.nextInt();
+            duplicate[i] = scan.nextInt();  //to print 10 values 
         }
 
         for (int i = 0; i < user.length; i++) {
             for (int j = 0; j < duplicate.length; j++) {
-                if (user[i] == duplicate[j]) {
+                if (user[i] == duplicate[j]) {       //to check duplicate values on the second array
                     System.out.println(user[i]);
                     break;
                 }
