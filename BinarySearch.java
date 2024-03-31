@@ -2,6 +2,7 @@ public class BinarySearch {
     public static void main(String[] args) {
         int[] numbers = {1, 23, 3, 4, 5, 6, 7, 8, 94, 54, 61, 76, 89};
         int target = 61;
+        Arrays.sort(numbers);
 
         int binaryresult = binary(numbers, target);
         if (binaryresult != -1) {
